@@ -54,8 +54,10 @@ export default function Pengaduan() {
                         <div className="row g-4">
                             <div className="col-12 col-sm-8 mx-auto">
                                 <div className="card card-custom shadow-sm border-0">
+                                    <div className="card-header bg-blue-gradient">
+                                        <h3 className="my-3 text-center text-white">Sampaikan Aduan Anda</h3>
+                                    </div>
                                     <div className="card-body">
-                                        <h3 className="mb-4 text-center">Sampaikan Aduan Anda</h3>
                                         <form>
                                             <div className="mb-3">
                                                 <label htmlFor="aduan" className="form-label">Judul Aduan</label>

@@ -235,6 +235,11 @@ a {
 
 /* PENGADUAN  */
 
+.bg-blue-gradient {
+	background: rgb(13,110,253);
+	background: linear-gradient(27deg, rgba(13,110,253,1) 12%, rgba(0,212,255,1) 100%);
+}
+
 .form-label {
 	font-weight: 500;
 }

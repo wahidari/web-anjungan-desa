@@ -54,10 +54,12 @@ export default function Antrian() {
                         <div className="row g-4">
                             <div className="col-12 col-sm-8 mx-auto">
                                 <div className="card card-custom shadow-sm border-0">
+                                    <div className="card-header bg-blue-gradient">
+                                        <h3 className="my-3 text-center text-white">Antrian Desa</h3>
+                                    </div>
                                     <div className="card-body">
-                                        <h3 className="mb-4 text-center">Ambil Antrian</h3>
                                         <form>
-                                            <div className="mb-4">
+                                            <div className="mt-4 mb-5">
                                                 <label htmlFor="aduan" className="form-label">Pilih Keperluan</label>
                                                 <select className="form-select" aria-label="Default select example">
                                                     <option value="1">Antrian Umum</option>

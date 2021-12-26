@@ -54,8 +54,10 @@ export default function Antrian() {
                         <div className="row g-4">
                             <div className="col-12 col-sm-8 mx-auto">
                                 <div className="card card-custom shadow-sm border-0">
+                                    <div className="card-header bg-blue-gradient">
+                                        <h3 className="my-3 text-center text-white">Informasi Kesehatan</h3>
+                                    </div>
                                     <div className="card-body">
-                                        <h3 className="mb-4 text-center">Informasi Kesehatan</h3>
                                         <h5>Poskesdes Desa {namaDesa}</h5>
                                         <table className="mt-3 table table-table-responsive">
                                             <tbody>
