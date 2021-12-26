@@ -118,7 +118,7 @@ export default function Home() {
                         </div>
                         <div className="col-sm-6 col-lg-3">
                             <div className="card card-link shadow border-0 bg-gradient-warning text-white h-100">
-                                <Link href="#">
+                                <Link href="/kesehatan">
                                     <a className="stretched-link" aria-label="Kesehatan"></a>
                                 </Link>
                                 <div className="card-body card-bg">

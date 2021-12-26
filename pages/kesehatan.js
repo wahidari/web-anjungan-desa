@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import { BsArrowLeft, BsHouse, BsUpload } from "react-icons/bs";
+import { BsArrowLeft, BsHouse } from "react-icons/bs";
 import Footer from '../components/Footer';
 
-export default function Pengaduan() {
+export default function Antrian() {
     let [namaDesa, setNamaDesa] = useState("Alang Alang");
     let [namaKecamatan, setNamaKecamatan] = useState("Tragah");
 
@@ -18,7 +18,7 @@ export default function Pengaduan() {
     return (
         <>
             <Head>
-                <title>Pengaduan Desa {namaDesa}</title>
+                <title>Info Kesehatan {namaDesa}</title>
                 <meta name="description" content={`Sistem Desa ${namaDesa}`} />
                 <link rel="icon" href="/favicon.ico" />
                 {/* <!-- Open Graph / Facebook --> */}
@@ -55,27 +55,32 @@ export default function Pengaduan() {
                             <div className="col-12 col-sm-8 mx-auto">
                                 <div className="card card-custom shadow-sm border-0">
                                     <div className="card-body">
-                                        <h3 className="mb-4 text-center">Sampaikan Aduan Anda</h3>
-                                        <form>
-                                            <div className="mb-3">
-                                                <label htmlFor="aduan" className="form-label">Judul Aduan</label>
-                                                <input type="text" className="form-control" id="aduan" aria-describedby="aduan" placeholder="Ketik Judul Aduan" required />
-                                            </div>
-                                            <div className="mb-3">
-                                                <label htmlFor="deskripsi" className="form-label">Deskripsi Aduan</label>
-                                                <textarea type="text" rows="5" className="form-control" id="deskripsi" aria-describedby="deskripsi" placeholder="Ketik Deskripsi Aduan" required />
-                                            </div>
-                                            <div className="mb-4">
-                                                <label htmlFor="formFile" className="form-label">Upload Lampiran</label>
-                                                <br/>
-                                                <label className="btn btn-outline-primary">
-                                                    <i className="me-2"><BsUpload /></i> 
-                                                    Pilih File
-                                                    <input type="file" id="formFile" name="image"/>
-                                                </label>
-                                            </div>
-                                            <button type="submit" className="btn btn-primary w-100 shadow px-3">KIRIM ADUAN</button>
-                                        </form>
+                                        <h3 className="mb-4 text-center">Informasi Kesehatan</h3>
+                                        <h5>Poskesdes Desa {namaDesa}</h5>
+                                        <table className="mt-3 table table-table-responsive">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Nama</td>
+                                                    <td>Poskesdes Desa {namaDesa}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Kepala</td>
+                                                    <td>.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Alamat</td>
+                                                    <td>Desa {namaDesa}, Kecamatan {namaKecamatan}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Kontak</td>
+                                                    <td>123456</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Jadwal</td>
+                                                    <td>Senin - Jumat, Jam Buka: 08:00 - 14:00</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>

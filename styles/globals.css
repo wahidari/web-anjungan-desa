@@ -29,6 +29,10 @@ a {
 	margin-top: -4px;
 }
 
+.navbar-brand {
+	margin-right: 0px !important;
+}
+
 .navbar-custom {
 	font-size: 18px !important;
 }
@@ -233,4 +237,8 @@ a {
 
 .form-label {
 	font-weight: 500;
+}
+
+#formFile {
+	display: none;
 }
