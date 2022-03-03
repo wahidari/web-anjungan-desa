@@ -52,7 +52,7 @@ export default function Antrian() {
                 <section className="min-vh-100 bg-grey-2 py-5">
                     <div className="container-fluid mt-5 px-md-5">
                         <div className="row g-4">
-                            <div className="col-12 col-sm-8 mx-auto">
+                            <div className="col-12 col-sm-10 col-lg-8 mx-auto">
                                 <div className="card card-custom shadow-sm border-0">
                                     <div className="card-header bg-blue-gradient">
                                         <h3 className="my-3 text-center text-white">Antrian Desa</h3>
